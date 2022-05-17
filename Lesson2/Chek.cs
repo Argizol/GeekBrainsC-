@@ -13,7 +13,7 @@ namespace Lesson2
             string adress = "Тут должен быть юр адрес организации";
             string chekNum = "Номер чека 234567";
             string prihod = "Приход";
-            DateTime dateByPurchase = new DateTime(2022, 05, 06); 
+            DateTime dateByPurchase = DateTime.Now; 
             string clientMail = "123@123.ru";
             string companyMail = "321@321.ru";
             string kktNum = "KKT021808";

@@ -12,15 +12,19 @@ namespace Lesson2
          static void Main(string[] args)
         {
 
+
             // MiddleTemp();
             //TodayMonth();
             //IsNumEven();
             //MothTemp.PrintWintMonth();
-            Chek.PrintChek();
+            //Chek.PrintChek();
+            //Task2();
+            string str = "Genius is simplicity.";
+            //char[] reverse = str.Reverse().ToArray();
+            Console.WriteLine(str.Reverse());
             Console.ReadLine();
-            
         }
-
+ 
         //Считаем среднюю температуру
         public static void MiddleTemp()
         {
@@ -74,6 +78,20 @@ namespace Lesson2
                  default: Console.WriteLine("Введите число от 1 до 12");
                      break;
              }
+        }
+
+        static int Task2()
+        {
+            Console.Write("Укажите порядковый номер месяца: ");
+            int monthNo = int.Parse(Console.ReadLine());
+            if (monthNo < 1 || monthNo > 12)
+            {
+                Console.WriteLine("Вы указали некорректный номер месяца.");
+            }
+            Console.WriteLine($"Вы указали месяц: {new DateTime(1, monthNo, 1).ToString("MMMM")}");
+            Console.ReadKey();
+
+            return monthNo;
         }
 
         //Определяем четность числа
