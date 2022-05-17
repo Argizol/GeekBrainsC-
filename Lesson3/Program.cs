@@ -12,11 +12,13 @@ namespace Lesson3
         static void Main(string[] args)
         {
             //printReverse();
-            //printArrayDiag();
-            //printArrayDiag2();
-            //printArrayDiag3();
+            printArrayDiag();
+            Console.WriteLine();
+            printArrayDiag2();
+            Console.WriteLine();
+            printArrayDiag3();
             //phoneNumber();
-            seaFight();
+            //seaFight();
             Console.ReadKey();
         }
         // ТЗ к первому заданию максимально невнятное
@@ -44,7 +46,6 @@ namespace Lesson3
                  }*/
                 Console.WriteLine(numbers[i, 3 -i -1]);
             }
-            
         }    
 
         /// <summary>
@@ -67,11 +68,11 @@ namespace Lesson3
                 {
                     if (i == 0)
                     {
-                        Console.Write(numbers[0, j]);
+                        Console.Write($"{numbers[0, j]} ");
                     }
                     else
                     {
-                        Console.Write(numbers[1, j + 1]);
+                        Console.Write($"{numbers[1, j + 1]} ");
                     }
                 }
                 Console.WriteLine();
@@ -82,7 +83,11 @@ namespace Lesson3
         /// </summary>
         static void printArrayDiag()
         {
-            int[,] numbers = new int[,] { { 1, 2, 3, 4, 5 }, { 6, 7, 8, 9, 0 } };
+            int[,] numbers = new int[,]
+            {
+                { 1, 2, 3, 4, 5 },
+                { 6, 7, 8, 9, 0 }
+            };
             foreach (int num in numbers)
             {
                 for (int j = 1; j < numbers.Length; j++)
