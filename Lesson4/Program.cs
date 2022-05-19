@@ -14,13 +14,14 @@ namespace Lesson4
             //Human.printPeopleV1();
             //Task2.stringToInt(Task2.getString());
             int counter = Task4.getNum();
-            //Console.Write($"Число Фибоначчи для {counter}
-            //= {Task4.Fibonachi(counter)}");
-            Console.Write($"Число Фибоначчи для {counter} =" +
-                $" {Task4.recFibonachi(counter)}");
-             Console.ReadKey();
+            //Console.Write($"Число Фибоначчи для {counter} =" +
+            //              $" {Task4.Fibonachi(counter)}");
+            //Console.Write($"Число Фибоначчи для {counter} =" +
+            //              $" {Task4.recFibonachi(counter)}");
+            //Console.Write($"Месяц № {counter} -" +
+            //              $" {Task3.whatSeason(counter)}");
+            Console.ReadKey();
+            
         }
-
-        
     }
 }

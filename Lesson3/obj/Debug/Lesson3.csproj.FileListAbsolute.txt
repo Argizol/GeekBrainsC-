@@ -1,0 +1,8 @@
+C:\Users\argiz\source\repos\Geekbrains\GeekBrainsC-\Lesson3\bin\Debug\Lesson3.exe.config
+C:\Users\argiz\source\repos\Geekbrains\GeekBrainsC-\Lesson3\bin\Debug\Lesson3.exe
+C:\Users\argiz\source\repos\Geekbrains\GeekBrainsC-\Lesson3\bin\Debug\Lesson3.pdb
+C:\Users\argiz\source\repos\Geekbrains\GeekBrainsC-\Lesson3\obj\Debug\Lesson3.csproj.AssemblyReference.cache
+C:\Users\argiz\source\repos\Geekbrains\GeekBrainsC-\Lesson3\obj\Debug\Lesson3.csproj.SuggestedBindingRedirects.cache
+C:\Users\argiz\source\repos\Geekbrains\GeekBrainsC-\Lesson3\obj\Debug\Lesson3.csproj.CoreCompileInputs.cache
+C:\Users\argiz\source\repos\Geekbrains\GeekBrainsC-\Lesson3\obj\Debug\Lesson3.exe
+C:\Users\argiz\source\repos\Geekbrains\GeekBrainsC-\Lesson3\obj\Debug\Lesson3.pdb
