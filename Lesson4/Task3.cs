@@ -8,37 +8,55 @@ namespace Lesson4
 {
     internal class Task3
     {
-        enum Season
+        public enum Season
         {
             Winter,
             Spring,
             Summer,
-            Autumn
+            Autumn,
+            Error
         }
-        public static string whatSeason(int a)
+        
+        public static Season whatSeason(int a)
         {
-           if (a == 1 || a == 2 || a == 12)
+            if (a == 1 || a == 2 || a == 12)
             {
-                Season season = Season.Winter;
-                return Convert.ToString(season);
+                return Season.Winter;
             }
-            if(a == 3 || a == 4 || a == 5) {
-                Season season2 = Season.Spring;
-                return Convert.ToString(season2);
+            if (a == 3 || a == 4 || a == 5)
+            { 
+                return Season.Spring;
             }
             if (a == 6 || a == 7 || a == 8)
             {
-                Season season3 = Season.Summer;
-                return Convert.ToString(season3);
+                return Season.Summer;
             }
             if (a == 9 || a == 10 || a == 11)
             {
-                Season season4 = Season.Autumn;
-                return Convert.ToString(season4);
+                return Season.Autumn;
             }
-            else
+            return Season.Error;
+        }
+
+        public static void printSeason(Season a)
+        {
+            switch (a)
             {
-               return "Введите число от 1 о 12";
+                case Season.Winter:
+                    Console.WriteLine("Зима");
+                    break;
+                case Season.Spring:
+                    Console.WriteLine("Весна");
+                    break;
+                case Season.Summer:
+                    Console.WriteLine("Лето");
+                    break;
+                case Season.Autumn:
+                    Console.WriteLine("Осень");
+                    break;
+                default: 
+                    Console.WriteLine("Ошибка: введите число от 1 до 12");
+                    break;
             }
         }
     }

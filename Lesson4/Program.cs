@@ -20,6 +20,7 @@ namespace Lesson4
             //              $" {Task4.recFibonachi(counter)}");
             //Console.Write($"Месяц № {counter} -" +
             //              $" {Task3.whatSeason(counter)}");
+            Task3.printSeason(Task3.whatSeason(counter));
             Console.ReadKey();
             
         }
