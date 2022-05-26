@@ -14,7 +14,7 @@ namespace Lesson5
             Console.WriteLine("Введите текст в строку");
             string textFile = Console.ReadLine();
             Directory.CreateDirectory(@"C:\Под урок 5");
-            File.WriteAllText(@"C:\Под урок 5\textFile.txt", $"{textFile} ");
+            File.WriteAllText(@"C:\Под урок 5\textFile.txt", textFile);
         }
         
     }

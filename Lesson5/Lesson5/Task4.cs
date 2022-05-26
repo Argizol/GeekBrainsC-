@@ -15,7 +15,7 @@ namespace Lesson5
             string startDir = Console.ReadLine();
             string result = "";
             CatalogSaverRec2(startDir, ref result, 0);
-            File.WriteAllText(@"C:\Под урок 5\Catalogs.txt", result);
+            File.WriteAllText(@"C:\Под урок 5\Catalogs.txt", result);            
         }
         static void CatalogSaverRec2(string startDir, ref string result, int c)
         {

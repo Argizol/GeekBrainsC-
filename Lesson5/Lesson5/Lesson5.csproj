@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Task4v2.cs" />
     <Compile Include="Task5.cs" />
     <Compile Include="Todo.cs" />
     <Compile Include="Task3v2.cs" />
