@@ -9,60 +9,56 @@ namespace Lesson6
 {
     internal class TaskManager
     {
-        public static void GetProcessList()
+        public static void ConsoleTaskManager()
         {            
-            Console.WriteLine($"Для просмотра процессов нажмите 1");
-            Console.WriteLine($"Для перехода к меню прекращения процессов нажмите 2");
-            int menuNumber = int.Parse(Console.ReadLine());
-            Console.Clear();
-            if(menuNumber == 1)
+            while (true)
             {
-                Process[] processList = Process.GetProcesses();
-                Console.WriteLine($"Запущенные процессы: ");
-                foreach (Process process in processList)
-                {                    
-                    Console.WriteLine($"{process.Id} {process.ProcessName}");
-                }                
-                Console.WriteLine($"Для завершения программы нажмите 1");
+                Console.WriteLine($"Для просмотра процессов нажмите 1");
                 Console.WriteLine($"Для перехода к меню прекращения процессов нажмите 2");
-                menuNumber = int.Parse(Console.ReadLine());
-                Console.ReadKey(true);
-            }
-            if (menuNumber == 1)
-            {
-                Console.WriteLine("Завершение программы. Нажмите любую клавишу...");
-                Console.ReadKey(true);
-                return;
-            }
-            if (menuNumber == 2)
-            {
-                Console.WriteLine("Для прекращения процесса введите его ID или имя");
-                var processKill = Console.ReadLine();
-                Type processType = processKill.GetType();
-                if (int.TryParse(processKill, out int number))
+                Console.WriteLine($"Для завершения программы введите 0");
+                int menuNumber = int.Parse(Console.ReadLine());
+                Console.Clear();
+                if (menuNumber == 1)
                 {
-                    int processKillID = int.Parse(processKill);
-                    string machineName = Process.GetCurrentProcess().MachineName;                    
-                    Process processById = Process.GetProcessById(processKillID, machineName);
-                        
-                    processById.Kill();
-                    Console.WriteLine($"Процесс {processById.ProcessName} остановлен.\n" +
-                            $" Нажмите любую клавишу для завершения программы...");
-                    
-                    Console.ReadKey(true);
-                }
-                if (processType.Name == "String")
-                {
-                    Process[] processListByName = Process.GetProcessesByName(processKill);
-                    foreach (Process process in processListByName)
+                    Process[] processList = Process.GetProcesses();
+                    Console.WriteLine($"Запущенные процессы: ");
+                    foreach (Process process in processList)
                     {
-                        process.Kill();
-                        Console.WriteLine($"Процесс {process.ProcessName} остановлен.\n" +
-                            $" Нажмите любую клавишу для завершения программы...");
+                        Console.WriteLine($"{process.Id} {process.ProcessName}");
+                    }                                        
+                }
+                if (menuNumber == 0)
+                {
+                    Console.WriteLine("Завершение программы. Нажмите любую клавишу...");
+                    Console.ReadKey(true);
+                    return;
+                }
+                if (menuNumber == 2)
+                {
+                    Console.WriteLine("Для прекращения процесса введите его ID или имя");
+                    var processKill = Console.ReadLine();
+                    if (int.TryParse(processKill, out int number))
+                    {
+                        int processKillID = int.Parse(processKill);
+                        string machineName = Process.GetCurrentProcess().MachineName;
+                        Process processById = Process.GetProcessById(processKillID, machineName);
+                        processById.Kill();
+                        Console.WriteLine($"Процесс {processById.ProcessName} остановлен.");                                             
                     }
-                    Console.ReadKey(true);                   
-                }                
-            }           
+                    else
+                    {
+                        Process[] processListByName = Process.GetProcessesByName(processKill);
+                        foreach (Process process in processListByName)
+                        {
+                            process.Kill();
+                            Console.WriteLine($"Процесс {process.ProcessName} остановлен.");                                                        
+                        }
+                    }
+                }
+                Console.WriteLine($"Для продолжения нажмите любую кнопку");
+                Console.ReadKey(true);
+                Console.Clear();
+            }            
         }
     }
 }
