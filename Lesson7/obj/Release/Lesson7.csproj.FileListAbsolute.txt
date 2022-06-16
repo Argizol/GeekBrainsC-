@@ -1,0 +1,8 @@
+C:\Users\argiz\source\repos\Geekbrains\GeekBrainsC-\Lesson7\bin\Release\Lesson7.exe.config
+C:\Users\argiz\source\repos\Geekbrains\GeekBrainsC-\Lesson7\bin\Release\Lesson7.exe
+C:\Users\argiz\source\repos\Geekbrains\GeekBrainsC-\Lesson7\bin\Release\Lesson7.pdb
+C:\Users\argiz\source\repos\Geekbrains\GeekBrainsC-\Lesson7\obj\Release\Lesson7.csproj.AssemblyReference.cache
+C:\Users\argiz\source\repos\Geekbrains\GeekBrainsC-\Lesson7\obj\Release\Lesson7.csproj.SuggestedBindingRedirects.cache
+C:\Users\argiz\source\repos\Geekbrains\GeekBrainsC-\Lesson7\obj\Release\Lesson7.csproj.CoreCompileInputs.cache
+C:\Users\argiz\source\repos\Geekbrains\GeekBrainsC-\Lesson7\obj\Release\Lesson7.exe
+C:\Users\argiz\source\repos\Geekbrains\GeekBrainsC-\Lesson7\obj\Release\Lesson7.pdb
